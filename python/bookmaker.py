@@ -36,10 +36,10 @@ def dealWithData(data):
 	maxNumber = max(north[t], west[t], east[t], south[t])
 	if maxNumber == 0:
 		maxNumber = 1
-	p_n.append(round(north[t]/maxNumber*100, 4))
-	p_w.append(round(west[t]/maxNumber*100, 4))
-	p_e.append(round(east[t]/maxNumber*100, 4))
-	p_s.append(round(south[t]/maxNumber*100, 4))
+	p_n.append(round(north[t]/maxNumber*10000, 4))
+	p_w.append(round(west[t]/maxNumber*10000, 4))
+	p_e.append(round(east[t]/maxNumber*10000, 4))
+	p_s.append(round(south[t]/maxNumber*10000, 4))
 	xtemp = []
 	xttemp = []
 	for i in range(t + 1):
